@@ -101,9 +101,19 @@ img {
   margin-left: 50px;
 }
 
-.contact-icon .second-contact-icon {
-  margin-left: 10px;
+.contact-icon,
+.second-contact-icon {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
 }
+/* .contact-icon:hover,
+.contact-icon:focus {
+  color: var(--accent-color);
+}
+.second-contact-icon:hover,
+.second-contact-icon:focus {
+  fill: var(--accent-color);
+} */
 .contact .contact-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -112,12 +122,13 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.contact .contact-link:hover,
-.contact .contact-link:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
-.contact-icon {
-  background-size: cover;
+.contact-link {
+  display: flex;
+  align-items: center;
 }
 
 /* Герой */
@@ -229,6 +240,28 @@ img {
 .team-item {
   background-color: var(--primary-bg-color);
   text-align: center;
+}
+/* .team-icon {
+  display: inline-flex;
+
+  width: 44px;
+}
+.team-contact-icon .team-icon {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: 206px;
+  height: 44px;
+  margin-left: 32px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+} */
+
+/*  Постоянные  клиенты */
+
+.client-icons {
+  display: flex;
+  align-items: center;
 }
 
 /* Подвал */
