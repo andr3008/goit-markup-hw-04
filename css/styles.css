@@ -101,6 +101,9 @@ img {
   margin-left: 50px;
 }
 
+.contact-icon .second-contact-icon {
+  margin-left: 10px;
+}
 .contact .contact-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -113,6 +116,9 @@ img {
 .contact .contact-link:focus {
   color: var(--accent-color);
 }
+.contact-icon {
+  background-size: cover;
+}
 
 /* Герой */
 
@@ -120,7 +126,6 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  border-top: 1px solid var(--header-border-color);
 }
 
 .hero-title {
