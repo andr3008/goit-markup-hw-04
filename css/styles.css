@@ -10,6 +10,7 @@
   --primary-second-bg-color: #2f303a;
   --portfolio-border-color: #eee;
   --header-border-color: #ececec;
+  --social-icons-color: #afb1b8;
 }
 body {
   margin: 0;
@@ -106,14 +107,14 @@ img {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
-/* .contact-icon:hover,
+.contact-icon:hover,
 .contact-icon:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .second-contact-icon:hover,
 .second-contact-icon:focus {
   fill: var(--accent-color);
-} */
+}
 .contact .contact-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -240,30 +241,51 @@ img {
 .team-item {
   background-color: var(--primary-bg-color);
   text-align: center;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 0px 0px 4px 4px;
 }
-/* .team-icon {
-  display: inline-flex;
+.team-icon {
+  justify-content: center;
+
+  fill: var(--social-icons-color);
 
   width: 44px;
-}
-.team-contact-icon .team-icon {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  width: 206px;
   height: 44px;
-  margin-left: 32px;
+}
+.team-icon:hover {
+  fill: var(--accent-color);
+}
+.team-contact-icon {
+  display: inline-flex;
+
   margin-top: 16px;
   margin-bottom: 30px;
-} */
+}
+.team-contact-icon li:not(:nth-last-child(-n + 1)) {
+  margin-right: 10px;
+}
 
 /*  Постоянные  клиенты */
 
 .client-icons {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  fill: var(--social-icons-color);
 }
-
+.client-icons li:not(:nth-last-child(-n + 1)) {
+  margin-right: 30px;
+}
+.client:hover {
+  fill: var(--accent-color);
+}
+.client {
+  justify-content: center;
+}
+.section-border svg {
+  border: 1px solid var(--social-icons-color);
+  width: 170px;
+  height: 92px;
+}
 /* Подвал */
 
 .footer-logo {
