@@ -202,6 +202,47 @@ img {
   line-height: 2;
   margin: 0;
 }
+/* .section-grate-border svg {
+  border: 1px solid var(--social-icons-color);
+  width: 270px;
+  height: 120px;
+} */
+.great-icons {
+  display: inline-flex;
+  align-items: center;
+  fill: var(--social-icons-color);
+  margin-bottom: 30px;
+  background: var(--our-team-bg-color);
+  border-radius: 4px;
+}
+.great-icons li:not(:nth-last-child(-n + 1)) {
+  margin-right: 30px;
+}
+.great-icon {
+  justify-content: center;
+  display: block;
+}
+
+.client-icons {
+  display: inline-flex;
+  align-items: center;
+  fill: var(--social-icons-color);
+}
+.client-icons li:not(:nth-last-child(-n + 1)) {
+  margin-right: 30px;
+}
+.client {
+  justify-content: center;
+}
+.client:hover {
+  fill: var(--accent-color);
+}
+
+.section-border svg {
+  border: 1px solid var(--social-icons-color);
+  width: 170px;
+  height: 92px;
+}
 
 /* Чем мы занимаемся */
 
@@ -275,12 +316,13 @@ img {
 .client-icons li:not(:nth-last-child(-n + 1)) {
   margin-right: 30px;
 }
-.client:hover {
-  fill: var(--accent-color);
-}
 .client {
   justify-content: center;
 }
+.client:hover {
+  fill: var(--accent-color);
+}
+
 .section-border svg {
   border: 1px solid var(--social-icons-color);
   width: 170px;
