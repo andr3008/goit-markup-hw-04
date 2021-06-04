@@ -36,7 +36,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Шапка */
@@ -109,11 +109,11 @@ img {
 }
 .contact-icon:hover,
 .contact-icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 .second-contact-icon:hover,
 .second-contact-icon:focus {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 .contact .contact-link {
   color: var(--primary-text-color);
@@ -123,6 +123,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
@@ -134,6 +135,15 @@ img {
 
 /* Герой */
 
+.bg-img {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Шапка.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.primacy-second-bg-color {
+  background-color: var(--primary-second-bg-color);
+}
 .hero {
   text-align: center;
   padding-top: 200px;
@@ -261,7 +271,6 @@ img {
 .team-contact-icon {
   display: flex;
   justify-content: center;
-
   margin-top: 16px;
   margin-bottom: 30px;
 }
@@ -274,16 +283,27 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: yellow;
+  background-color: var(--primary-bg-color);
   border-radius: 50%;
+  fill: currentColor;
 }
-
-.team-contact-icon .team-icon {
+.team-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
+  background-size: contain;
 }
-.team-contact-icon .team-icon:hover {
-  fill: var(--accent-color);
+.team-icon:hover {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+.team-contact-icon li:hover {
+  background-color: var(--accent-color);
+  width: 44px;
+  height: 44px;
 }
 
 /*  Постоянные  клиенты */
@@ -302,6 +322,7 @@ img {
 }
 .client:hover {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .section-border svg {
@@ -354,7 +375,7 @@ img {
 }
 
 .footer-container .icon + .icon {
-  margin-left: 50px;
+  margin-left: 70px;
 }
 .footer-social-icons {
   display: flex;
@@ -372,16 +393,30 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: yellow;
+  color: var(--primary-bg-color);
+  background-color: rgb(255, 255, 255, 0.1);
   border-radius: 50%;
+  fill: currentColor;
 }
-
-.footer-social-icons .footer-icon {
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
 }
-.footer-social-icons .footer-icon:hover {
-  fill: var(--accent-color);
+.footer-icon:hover {
+  fill: var(--primary-bg-color);
+  background-color: var(--accent-color);
+}
+
+.footer-social-icons li:hover {
+  width: 44px;
+  height: 44px;
+  background-color: var(--accent-color);
+}
+.join-bg {
+  color: var(--primary-bg-color);
 }
 /* Кнопка */
 
@@ -407,9 +442,6 @@ img {
 .button:focus {
   color: var(--primary-bg-color);
   background-color: var(--hero-button-hover-color);
-}
-.primacy-second-bg-color {
-  background-color: var(--primary-second-bg-color);
 }
 
 /* Портфолио */
